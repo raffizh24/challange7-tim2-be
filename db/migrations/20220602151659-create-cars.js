@@ -45,10 +45,10 @@ module.exports = {
                 type: Sequelize.INTEGER,
             },
             options: {
-                type: Sequelize.ARRAY(DataTypes.STRING),
+                type: Sequelize.ARRAY(Sequelize.STRING),
             },
             specs: {
-                type: Sequelize.ARRAY(DataTypes.STRING),
+                type: Sequelize.ARRAY(Sequelize.STRING),
             },
             createdAt: {
                 allowNull: false,
