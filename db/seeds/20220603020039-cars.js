@@ -3,7 +3,7 @@
 module.exports = {
     async up(queryInterface, Sequelize) {
         await queryInterface.bulkInsert(
-            "cars",
+            "Cars",
             [
                 {
                     plate: "DBH-3491",
