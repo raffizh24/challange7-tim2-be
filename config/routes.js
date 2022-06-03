@@ -15,11 +15,11 @@ apiRouter.use(express.json());
  *       implementations
  */
 
-apiRouter.post("/api/v1/auth/google", handleGoogleLoginOrRegister);
-apiRouter.get("/api/v1/cars/", userController.whoAmI, carsController.list);
-apiRouter.post("/api/v1/login", userController.login);
-apiRouter.post("/api/v1/register", userController.register);
-apiRouter.get("/api/v1/auth/me", userController.whoAmI);
+apiRouter.post("https://challange-7-tim2-be.herokuapp.com/api/v1/auth/google", handleGoogleLoginOrRegister);
+apiRouter.get("https://challange-7-tim2-be.herokuapp.com/api/v1/cars/", userController.whoAmI, carsController.list);
+apiRouter.post("https://challange-7-tim2-be.herokuapp.com/api/v1/login", userController.login);
+apiRouter.post("https://challange-7-tim2-be.herokuapp.com/api/v1/register", userController.register);
+apiRouter.get("https://challange-7-tim2-be.herokuapp.com/api/v1/auth/me", userController.whoAmI);
 
 /**
  * TODO: Delete this, this is just a demonstration of
