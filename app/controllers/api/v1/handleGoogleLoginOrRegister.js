@@ -36,7 +36,7 @@ async function handleGoogleLoginOrRegister(req, res) {
 
         const token = createToken(user);
 
-        res.status(201).json({token});
+        res.status(201).json({token, user});
     } catch (err) {
         console.log(err.message);
         res.status(401).json({error: {name: err.name, message: err.message}});
