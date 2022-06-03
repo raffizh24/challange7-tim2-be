@@ -5,11 +5,11 @@
   "license": "MIT",
   "engines": {
     "node": "16.x",
-    "npm": "8.*",
+    "npm": "8.x",
     "yarn": "1.22.18"
   },
   "scripts": {
-    "start": "bin/www",
+    "start": "-q bin/www",
     "build": "npm run db:migrate",
     "develop": "nodemon -q bin/www",
     "dev": "nodemon -L bin/www",
