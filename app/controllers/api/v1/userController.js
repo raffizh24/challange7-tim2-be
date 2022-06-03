@@ -44,11 +44,14 @@ const login = async (req, res, next) => {
     res.json({token, user});
 };
 
-const auth = async (req, res) => {
+const auth = async (req, res, next) => {
     try {
         const bearerToken = req.headers.authorization;
         const token = bearerToken.split("Bearer ")[1];
         const tokenPayload = verifyToken(token);
+        if (tokenPayload) {
+            next();
+        }
     } catch (error) {
         res.status(401).json({
             status: "failed",
