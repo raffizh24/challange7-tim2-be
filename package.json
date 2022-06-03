@@ -1,5 +1,5 @@
 {
-  "name": "binar-sme-chapter-06-topic-01-design-pattern-service-repository",
+  "name": "challange7-tim2",
   "version": "1.0.0",
   "main": "app/index.js",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "yarn": "1.22.18"
   },
   "scripts": {
-    "start": "bin/www",
+    "start": "nodemon -q bin/www",
     "build": "npm run db:migrate",
     "develop": "nodemon -q bin/www",
     "dev": "nodemon -L bin/www",
