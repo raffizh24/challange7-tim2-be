@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "app/index.js",
   "license": "MIT",
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.1",
+    "yarn": "1.22.18"
+  },
   "scripts": {
     "start": "nodemon -q bin/www",
     "build": "npm run db:migrate && npm run db:seed",
