@@ -16,7 +16,7 @@ apiRouter.use(express.json());
  */
 
 apiRouter.post("/api/v1/auth/google", handleGoogleLoginOrRegister);
-apiRouter.get("/api/v1/cars/", userController.whoAmI, carsController.list);
+apiRouter.get("/api/v1/cars/", userController.auth, carsController.list);
 apiRouter.post("/api/v1/login", userController.login);
 apiRouter.post("/api/v1/register", userController.register);
 apiRouter.get("/api/v1/auth/me", userController.whoAmI);
