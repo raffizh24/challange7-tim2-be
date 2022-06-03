@@ -6,17 +6,17 @@ module.exports = {
             "Type_Users",
             [
                 {
-                    type: "Superadmin",
+                    type_user: "Superadmin",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
                 {
-                    type: "Admin",
+                    type_user: "Admin",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
                 {
-                    type: "Member",
+                    type_user: "Member",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
