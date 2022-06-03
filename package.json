@@ -10,15 +10,14 @@
   },
   "scripts": {
     "start": "nodemon -q bin/www",
-    "build": "npm run db:migrate && npm run db:seed",
+    "build": "npm run db:migrate",
     "develop": "nodemon -q bin/www",
     "dev": "nodemon -L bin/www",
     "db:create": "./node_modules/.bin/sequelize-cli db:create",
     "db:drop": "./node_modules/.bin/sequelize-cli db:drop",
     "db:migrate": "./node_modules/.bin/sequelize-cli db:migrate",
     "db:rollback": "./node_modules/.bin/sequelize-cli db:migrate:undo",
-    "db:seed": "./node_modules/.bin/sequelize-cli db:seed:all",
-    "db:seed:undo": "./node_modules/.bin/sequelize-cli db:seed:undo"
+    "db:seed": "./node_modules/.bin/sequelize-cli db:seed:all"
   },
   "dependencies": {
     "axios": "^0.27.2",
