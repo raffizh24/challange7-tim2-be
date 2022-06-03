@@ -3,7 +3,6 @@ const carsService = require("../../../services/carsService");
 module.exports = {
     list(req, res) {
         const {date, time, passenger} = req.query;
-        console.log;
         carsService
             .filter(date, time, passenger)
             .then(({data}) => {
